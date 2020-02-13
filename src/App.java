@@ -2,6 +2,7 @@ import device.Device;
 import device.FMRadio;
 import device.TV;
 import remote.RemoteControl;
+import remote.RemoteControlAdvanced;
 
 public class App {
 
@@ -26,7 +27,12 @@ public class App {
         for (int i = 0; i < 100; i++) {
             remoteControl.volumeUp();
         }
+
+        remoteControl = new RemoteControlAdvanced(device);
+        ((RemoteControlAdvanced) remoteControl).mute();
+
         remoteControl.togglePower();
+
     }
-    
+
 }
