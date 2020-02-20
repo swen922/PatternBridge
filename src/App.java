@@ -4,6 +4,8 @@ import device.TV;
 import remote.RemoteControl;
 import remote.RemoteControlAdvanced;
 
+/** Мост, также известен как: Bridge */
+
 public class App {
 
     public static void main(String[] args) {
